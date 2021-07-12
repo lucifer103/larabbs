@@ -17,6 +17,7 @@
         "laravel/tinker": "^2.5",
         "laravel/ui": "^3.3",
         "mews/captcha": "^3.2",
+        "mews/purifier": "^3.3",
         "overtrue/laravel-lang": "^5.0",
         "summerblue/laravel-active": "^8.0"
     },
