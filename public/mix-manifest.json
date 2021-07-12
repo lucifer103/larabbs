@@ -1,4 +1,17 @@
 {
     "/js/app.js": "/js/app.js?id=16c6f9283d51d0f59619",
-    "/css/app.css": "/css/app.css?id=268fd14c43793d2d2164"
+    "/css/app.css": "/css/app.css?id=268fd14c43793d2d2164",
+    "/js/dompurify.js": "/js/dompurify.js?id=735a2200466598444205",
+    "/js/hotkeys.js": "/js/hotkeys.js?id=60b95061e721b635da02",
+    "/js/jquery.min.js": "/js/jquery.min.js?id=220afd743d9e9643852e",
+    "/js/mobilecheck.js": "/js/mobilecheck.js?id=c4cb6f7f68f6010e3e88",
+    "/js/module.js": "/js/module.js?id=1f0206730b87684b7ad6",
+    "/js/page-demo.js": "/js/page-demo.js?id=863d448ef9f15060bd67",
+    "/js/page-doc.js": "/js/page-doc.js?id=7d96e1bd488f256490ee",
+    "/js/page-download.js": "/js/page-download.js?id=4f38e86cba8f0fc8bbb4",
+    "/js/page-form.js": "/js/page-form.js?id=77e01d8f5683d462d1cd",
+    "/js/simditor.js": "/js/simditor.js?id=67c871902a2de0f7cfd7",
+    "/js/uploader.js": "/js/uploader.js?id=054b694785154206398b",
+    "/css/mobile.css": "/css/mobile.css?id=035c4bf0ba1f7c52087c",
+    "/css/simditor.css": "/css/simditor.css?id=e64a259f1441d15dab36"
 }
