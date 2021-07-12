@@ -22,10 +22,10 @@ class AppServiceProvider extends ServiceProvider
      * @return void
      */
     public function boot()
-	{
-		\App\Models\User::observe(\App\Observers\UserObserver::class);
-		\App\Models\Topic::observe(\App\Observers\TopicObserver::class);
+    {
+        \App\Models\User::observe(\App\Observers\UserObserver::class);
+        \App\Models\Topic::observe(\App\Observers\TopicObserver::class);
 
-        //
+        \Illuminate\Pagination\Paginator::useBootstrap();
     }
 }
