@@ -15,3 +15,11 @@ if (!function_exists('category_nav_active')) {
         return active_class((if_route('categories.show') && if_route_param('category', $category_id)));
     }
 }
+
+if (!function_exists('make_excerpt')) {
+    function make_excerpt($value, $length = 200)
+    {
+        $excerpt = trim(preg_replace('/\r\n|\r|\n+/', ' ', strip_tags($value)));
+        return Str::limit($excerpt, $length);
+    }
+}
