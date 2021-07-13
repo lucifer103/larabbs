@@ -20,6 +20,8 @@ class User extends Authenticatable implements MustVerifyEmailContract
 
     use HasDateTimeFormatter;
 
+    use Traits\ActiveUserHelper;
+
     /**
      * The attributes that are mass assignable.
      *
