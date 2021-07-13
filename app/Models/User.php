@@ -8,6 +8,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Auth\MustVerifyEmail as MustVerifyEmailTrait;
 use Auth;
+use Dcat\Admin\Traits\HasDateTimeFormatter;
 
 class User extends Authenticatable implements MustVerifyEmailContract
 {
@@ -16,6 +17,8 @@ class User extends Authenticatable implements MustVerifyEmailContract
     use Notifiable {
         notify as protected laravelNotify;
     }
+
+    use HasDateTimeFormatter;
 
     /**
      * The attributes that are mass assignable.
@@ -84,5 +87,17 @@ class User extends Authenticatable implements MustVerifyEmailContract
         $this->notification_count = 0;
         $this->save();
         $this->unreadNotifications->markAsRead();
+    }
+
+    public function setPasswordAttribute($value)
+    {
+        // 如果值的长度等于 60，即认为是已经做过加密的情况
+        if (strlen($value) != 60) {
+
+            // 不等于 60，做密码加密处理
+            $value = bcrypt($value);
+        }
+
+        $this->attributes['password'] = $value;
     }
 }
